@@ -64,7 +64,7 @@ body{
 
 .main-h2{
     color: white;
-    letter-spacing: 0.60rem;
+    letter-spacing: 0.6rem;
     font-size: 2rem;
     margin-left: 4rem;
 }
@@ -131,24 +131,28 @@ body{
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .main-h1{
         margin-left: 1rem;
-        font-size: 4.5rem;
-        margin-top: 9rem
+        font-size: 4rem;
+        margin-top: 0.4rem;
+        letter-spacing: 0.1rem;
     }
 
     .main-h2{
-        font-size: 1.5rem;
         margin-left: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        width: 60%;
     }
-
     .logo{
         margin: 0;
     }
 
     .navigace{
         flex-direction: column;
+        border-bottom: none;
+        height: fit-content;
     }
 
     .akce{
@@ -157,14 +161,15 @@ body{
     }
 
     body{
-        background-position-y: 30rem;
+        background-position-y: 32rem;
     }
     
     .navigace > ul{
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 0.5rem 0;
         align-self: stretch;
         align-items: center;
+        gap: 0.3rem;
     }
 }
