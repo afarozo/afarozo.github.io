@@ -71,6 +71,7 @@ body{
     width: fit-content;
     font-family: 'Nunito Sans', sans-serif;
     margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-h2{
