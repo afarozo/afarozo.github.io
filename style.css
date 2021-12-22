@@ -164,5 +164,6 @@ body{
         background-color: #dfdede;
         color: black;
         transform: none;
+        -webkit-tap-highlight-color: transparent; /* Remove blue flash on mobile "click/active" */
     }
 }
