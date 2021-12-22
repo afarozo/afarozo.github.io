@@ -32,6 +32,8 @@ body{
 .navigace > ul > li{
     display: inline-block;
     list-style: none;
+    width: fit-content;
+    height: fit-content;
 }
 
 .navigace ul > li > a{
@@ -43,7 +45,8 @@ body{
     transition: all 250ms ease;
     letter-spacing: 0.03rem;
     font-weight: 600;
-    color: #a8a8a8;
+    color: #dfdede;
+    width: fit-content;
 }
 
 .navigace ul > li > a:hover{
@@ -60,8 +63,9 @@ body{
     font-weight: 450;
     width: fit-content;
 }
+
 .main-h2, .main-h3, .main-h4{
-    color: #a8a8a8;
+    color: #dfdede;
     font-size: 2.5rem;
     margin-left: 4rem;
     font-weight: 100;
@@ -75,7 +79,7 @@ body{
 }
 
 .akce{
-    color: rgb(180, 22, 22);
+    color: rgb(207, 24, 24);
     font-size: 2rem;
     letter-spacing: 0.3rem;
     background-color: rgba(0, 0, 0, 0.3);
@@ -140,20 +144,23 @@ body{
     .main-h1{
         margin-left: 1rem;
         font-size: 4rem;
-        margin-top: 0.4rem;
+        margin-top: 2rem;
         letter-spacing: 0.1rem;
         line-height: 4rem;
     }
 
-    .main-h2{
+    .main-h2, .main-h3, .main-h4{
         margin-left: 1rem;
         font-size: 1rem;
         letter-spacing: 0.3rem;
-        width: 60%;
         line-height: 1.25rem;
+        margin-top: 1rem;
     }
     .logo{
-        margin: 0;
+        margin: 1rem;
+        width: 70%;
+        align-self: center;
+        box-shadow: 0 0 2rem 0.5rem rgb(98, 65, 190);
     }
 
     .navigace{
@@ -173,10 +180,11 @@ body{
     
     .navigace > ul{
         display: flex;
-        flex-direction: column;
-        margin: 0.5rem 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1rem 0 0 0;
         align-self: stretch;
-        align-items: center;
-        gap: 0.3rem;
+        width: 100%;
+        height: 11rem
     }
 }
