@@ -34,6 +34,7 @@ body{
     list-style: none;
     width: fit-content;
     height: fit-content;
+    margin: 0 2rem;
 }
 
 .navigace ul > li > a{
@@ -96,46 +97,6 @@ body{
 }
 
 
-@media only screen and (max-width: 1760px) {
-    .navigace ul > li > a{
-        font-size: 1.8rem;
-    }
-}
-
-@media only screen and (max-width: 1660px) {
-    .navigace ul > li > a{
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 1393px) {
-    .navigace ul > li > a{
-        font-size: 1.4rem;
-    }
-}
-
-@media only screen and (max-width: 1296px) {
-    .navigace ul > li > a{
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 1162px) {
-    .navigace ul > li > a{
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 1070px) {
-    .navigace ul > li > a{
-        font-size: 1.2rem;
-    }
-
-    .logo{
-        margin-left: 0.5rem;
-    }
-}
-
 @media only screen and (max-width: 450px) {
     .main-h1{
         margin-left: 1rem;
@@ -178,7 +139,8 @@ body{
     .navigace > ul{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-content: space-around;
         margin: 1rem 0;
         align-self: stretch;
         width: 100%;
@@ -186,18 +148,20 @@ body{
     }
 
     .navigace > ul >li{
-        box-shadow: 0 0 0.25rem 0.25rem white;
-        margin: 0.5rem;
-        width: 45%;
+        box-shadow: 0 0 0.20rem 0.15rem #dfdede;
+        width: 40%;
         text-align: center;
+        margin: 0;
     }
 
     .navigace > ul >li >a{
-        padding: 0.30rem
+        font-size: 1rem;
+        padding: 0.25rem 0;
     }
 
     .navigace > ul >li >a:hover{
-        background-color: white;
+        background-color: #dfdede;
         color: black;
+        transform: none;
     }
 }
